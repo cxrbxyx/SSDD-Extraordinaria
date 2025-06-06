@@ -11,7 +11,7 @@ authors = [
 ]
 description = "Template for Distributed Systems laboratory"
 requires-python = ">=3.10"
-dependencies = ['zeroc-ice']
+dependencies = ['zeroc-ice', "kafka-python>=2.2.10"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
@@ -21,3 +21,4 @@ license = "GPL-3.0-only"
 
 [project.scripts]
 ssdd-calculator = "calculator.command_handlers:calculator"
+ssdd-kafka-bridge = "calculator.kafka_bridge:main"
